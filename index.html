@@ -4,31 +4,44 @@
     <title>action card</title>
     <style>
       article {
-        font-family: sans-serif;
+        margin: auto auto;
         width: 500px;
-        background-color: aliceblue;
+        border: 1px solid rgb(139, 137, 137);
+        font-family: sans-serif;
         text-align: left;
-        color: rgba(0, 0, 0, 1);
+        color: rgb(139, 137, 137);
       }
 
       article * {
-        margin-left : 50px;
-        margin-right: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
       }
 
       article h1 {
-        font-weight: 300;
-        font-size: 40px;
-        padding-top: 30px;
+        font-weight: 400;
+        font-size: 38px;
+        padding-top: 20px;
       }
 
-div {
-  margin-left: 50px;
-  margin-right: 50px;
-  background-color:  #4184e1;
-  border-radius: 40px;
-  height: 50px;
-}
+     
+      article p {
+        font-size: 20px;
+        font-weight: 300px;
+      }
+
+   div {
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: #4184e1;
+        border-radius: 40px;
+        height: 50px;
+      }
+
+      div + p {
+        padding-bottom: 30px;
+        font-size: initial;
+        font: 100;
+      }
 
       div p {
         color: aliceblue;
@@ -36,29 +49,24 @@ div {
         text-align: center;
         padding: 10px;
       }
-
-      div + p {
-        margin-bottom: 50px;
-      }
-
-      h1 + p {
-        font-size: 20px;
-      }
     </style>
   </head>
   <body>
-    <article>
-      <h1>Build your first chatbot in 10 minutes!</h1>
-      <p>
-        Have a bot answering questions from customers on your website within 10
-        minutes of signing up for ChatBot.
-      </p>
+    <main>
+      <article>
+        <h1>Build your first chatbot in 10 minutes!</h1>
+        <p>____</p>
+        <p>
+          Have a bot answering questions from customers on your website within
+          10 minutes of signing up for ChatBot.
+        </p>
 
-      <div><p>TRY NOW</p></div>
-      <p>
-        By clicking try now you create an account and agree to our Terms and
-        Conditions and privacy policy
-      </p>
-    </article>
+        <div><p>TRY NOW →</p></div>
+        <p>
+          By clicking try now you create an account and agree to our Terms and
+          Conditions and privacy policy
+        </p>
+      </article>
+    </main>
   </body>
 </html>
